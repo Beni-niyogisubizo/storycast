@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryCast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Pompiere&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Other meta tags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+
+</head>
+
+
+<body>
+    <!-- <header class="site-header">
+        <nav class="nav" aria-label="Main Navigation">
+
+            <a href="/index.html" class="nav__brand">
+                <span class="nav__logo" aria-hidden="true">🎧</span>
+                <span class="nav__title">StoryCast</span>
+            </a>
+
+            <ul class="nav__menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./story/story-1.html">Stories</a></li>
+            </ul>
+
+        </nav>
+    </header> -->
+
+
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main Navigation">
+
+            <a href="/index.html" class="nav__brand">
+                <span class="nav__logo" aria-hidden="true">🎧</span>
+                <span class="nav__title">StoryCast</span>
+            </a>
+
+            <ul class="nav__menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./story/story-1.html">Stories</a></li>
+            </ul>
+
+            <button class="nav__toggle" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="mobile-overlay">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <div class="nav__overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+        <ul class="nav__overlay-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./story/story-1.html">Stories</a></li>
+        </ul>
+        <p class="nav__overlay-footer">StoryCast &nbsp;·&nbsp; Your Audio Stories</p>
+    </div>
+
+
+
+    <main>
+        <section class="hero">
+            <video class="hero__video" autoplay muted loop playsinline>
+                <source src="./assets/video/15308631_3840_2160_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1>Every Voice Deserves <br> to Be Heard</h1>
+                <p>
+                    StoryCast showcases audio and video storytelling from communities
+                    around the world accessible to everyone, everywhere.
+                </p>
+                <a href="#" class="hero__btn" style="font-size: 16px;">Explore Stories</a>
+            </div>
+        </section>
+
+
+
+        <!-- ════════════════════════════════ ═══════════  ═    Featured SECTION  ═══════════  ═══════════  ═══════════  ════════════════ -->
+
+
+        <section>
+
+            <div class="section-header">
+                <h1>Explore Our Stories</h1>
+                <p>Expert-led audio and video storytelling platform, connecting global communities <br /> through
+                    accessible, moving stories.</p>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headphones"></i></div>
+                    <div class="feature-title">Audio Story</div>
+                    <div class="feature-description">Immersive audio narratives with full transcripts for every
+                        listener.</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-film"></i></div>
+                    <div class="feature-title">Video Documentaries</div>
+                    <div class="feature-description">Visual storytelling with captions and descriptive audio tracks.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <div class="feature-title">Community Voices</div>
+                    <div class="feature-description">Stories from diverse communities, told in their own words.</div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ════════════════════════════════ ═══════════  ═    Featured SECTION  ═══════════  ═══════════  ═══════════  ════════════════ -->
+
+
+        <section class="featured-series" aria-labelledby="featured-heading">
+            <div class="section-header center">
+                <h1>Featured Series</h1>
+                <p>Curated story collections grouped by theme or place made to help you dive deeper, <br /> follow a
+                    narrative, and discover voices that connect.</p>
+
+            </div>
+
+            <div class="series-grid">
+                <!-- Card 1 – Audio -->
+                <article class="series-card" aria-label="The Last Broadcast – Audio series">
+                    <div class="card-media">
+                        <span class="media-badge" aria-label="Media type: Audio">Audio</span>
+                        <figure>
+                            <!-- Replace src with real image path -->
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&q=70"
+                                alt="A person wearing headphones listening in a dimly lit room" />
+                            <figcaption class="sr-only">
+                                Person with headphones engaged in audio storytelling.
+                            </figcaption>
+                        </figure>
+
+                        <!-- Accessible audio element (hidden UI, screen-reader accessible) -->
+                        <audio aria-label="Preview of The Last Broadcast">
+                            <source src="last-broadcast-preview.mp3" type="audio/mpeg" />
+                            <track kind="descriptions" src="last-broadcast.vtt" srclang="en"
+                                label="English description" />
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <div class="card-body">
+                        <h3>The Last Broadcast</h3>
+                        <p>Audio and video storytelling for everyone. Accessible, inclusive, and community-driven.</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 – Video -->
+                <article class="series-card" aria-label="Voices of the City – Video series">
+                    <div class="card-media">
+                        <span class="media-badge" aria-label="Media type: Video">Video</span>
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400&q=70"
+                                alt="Microphones and recording equipment on a stage with warm amber lighting" />
+                            <figcaption class="sr-only">
+                                Recording studio with microphones capturing oral traditions.
+                            </figcaption>
+                        </figure>
+
+                        <!-- Accessible video element -->
+                        <video aria-label="Preview of Voices of the City" preload="none" poster="voices-poster.jpg">
+                            <source src="voices-of-the-city.mp4" type="video/mp4" />
+                            <track kind="captions" src="voices-captions.vtt" srclang="en" label="English captions"
+                                default />
+                            <track kind="descriptions" src="voices-descriptions.vtt" srclang="en"
+                                label="Audio descriptions" />
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+
+                    <div class="card-body">
+                        <h3>Voices of the city</h3>
+                        <p>This video documentary captures the rich oral traditions of a rural valley community, where
+                            elders gather.</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 – Audio -->
+                <article class="series-card" aria-label="The Sound Engineers – Audio series">
+                    <div class="card-media">
+                        <span class="media-badge" aria-label="Media type: Audio">Audio</span>
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1529148482759-b35b25c5f217?w=400&q=70"
+                                alt="Hands holding an open book illuminated by warm golden light" />
+                            <figcaption class="sr-only">
+                                An artist reviewing a script before entering the recording booth.
+                            </figcaption>
+                        </figure>
+
+                        <audio aria-label="Preview of The Sound Engineers">
+                            <source src="sound-engineers-preview.mp3" type="audio/mpeg" />
+                            <track kind="descriptions" src="sound-engineers.vtt" srclang="en"
+                                label="English description" />
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <div class="card-body">
+                        <h3>The Sound Engineers</h3>
+                        <p>Go behind the soundboard with the engineers and artists who shape the audio landscapes of
+                            podcasts.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ═══════════    CONTACT SECTION  ========================════════════════ -->
+        <section class="contact-section" aria-labelledby="contact-heading">
+            <div class="section-header">
+                <h1>Contact Us</h1>
+                <!-- <p>Discover immersive audio, video, and community experiences</p> -->
+                <p>Questions or feedback? Send us a message and we’ll get back to you soon. </p>
+            </div>
+            <div class="contact-wrapper">
+
+                <!-- Left: Info -->
+                <div class="contact-info">
+                    <h2 id="contact-heading">Get In Touch</h2>
+                    <p class="contact-intro">We are always ready to help you and answer your questions. Reach out
+                        anytime we'd love to hear from you.</p>
+
+                    <address>
+                        <article class="contact-item" aria-label="Head Office location">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                    <line x1="12" y1="12" x2="12" y2="12.01" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Head Office</h3>
+                                <p>RWANDA, Kigali, Kicukiro</p>
+                            </div>
+                        </article>
+
+                        <article class="contact-item" aria-label="Physical location address">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>24J3+R22, KK 15 Rd, Kigali</p>
+                            </div>
+                        </article>
+                    </address>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form-wrap">
+                    <h2>Leave Us a Message</h2>
+                    <form class="contact-form" action="#" method="post" novalidate aria-label="Contact form">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name" class="sr-only-label">First Name</label>
+                                <input type="text" id="first-name" name="first_name" placeholder="FIRST NAME"
+                                    autocomplete="given-name" required aria-required="true" />
+                            </div>
+                            <div class="form-group">
+                                <label for="second-name" class="sr-only-label">Second Name</label>
+                                <input type="text" id="second-name" name="second_name" placeholder="SECOND NAME"
+                                    autocomplete="family-name" required aria-required="true" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-email" class="sr-only-label">Email</label>
+                                <input type="email" id="contact-email" name="email" placeholder="EMAIL"
+                                    autocomplete="email" required aria-required="true" />
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="sr-only-label">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="SUBJECT" required
+                                    aria-required="true" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="sr-only-label">Message</label>
+                            <textarea id="message" name="message" placeholder="MESSAGE" rows="5" required
+                                aria-required="true"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="footer-main">
+
+            <!-- Col 1: About -->
+            <div class="footer-col footer-about">
+                <h3>About Us</h3>
+                <p>StoryCast exists to amplify diverse voices through accessible audio and video storytelling. We
+                    believe every story matters and every person deserves the ability to experience it.</p>
+                <form class="footer-subscribe" action="#" method="post" aria-label="Newsletter subscription">
+                    <label for="footer-email" class="sr-only-label">Your Email Address</label>
+                    <input type="email" id="footer-email" name="email" placeholder="Your Email address"
+                        autocomplete="email" required aria-required="true" />
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+
+            <!-- Col 2: Contact -->
+            <address class="footer-col footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg></span>
+                        25 Street, 145 City Road New Town
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
+                            </svg></span>
+                        <a href="tel:+2507942127871">+250 7942 127 871</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg></span>
+                        <a href="mailto:storycast@company.com">storycast@company.com</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg></span>
+                        <a href="mailto:needhelp@storycast.com">needhelp@storycast.com</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg></span>
+                        <a href="#">Donate</a>
+                    </li>
+                </ul>
+            </address>
+
+            <!-- Col 3: Quick Links -->
+            <nav class="footer-col footer-links" aria-label="Quick navigation links">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg></span><a href="#">Home</a></li>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M20 21a8 8 0 1 0-16 0" />
+                            </svg></span><a href="#">About Us</a></li>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg></span><a href="#">Our Work</a></li>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="16" />
+                                <line x1="8" y1="12" x2="16" y2="12" />
+                            </svg></span><a href="#">Get Involved</a></li>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg></span><a href="#">Donate</a></li>
+                </ul>
+            </nav>
+
+            <!-- Col 4: Follow Us -->
+            <div class="footer-col footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></span>
+                        <a href="#" aria-label="LinkedIn">StoryCast</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4l16 16M4 20 20 4" />
+                            </svg></span>
+                        <a href="#" aria-label="X (Twitter)">StoryCast</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg></span>
+                        <a href="#" aria-label="Instagram">StoryCast</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></span>
+                        <a href="#" aria-label="Facebook">StoryCast</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg></span>
+                        <a href="#" aria-label="Donate">Donate</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div><!-- /footer-main -->
+
+        <hr class="footer-divider" />
+
+        <div class="footer-bottom">
+            <nav class="footer-legal" aria-label="Legal links">
+                <a href="#">Career</a><span aria-hidden="true">|</span>
+                <a href="#">About us</a><span aria-hidden="true">|</span>
+                <a href="#">Contact us</a><span aria-hidden="true">|</span>
+                <a href="#">Privacy policy</a>
+            </nav>
+            <p class="footer-copy"><small>&copy; 2015 StoryCast. All rights reserved.</small></p>
+        </div>
+    </footer>
+
+
+    <script>
+        const toggle = document.querySelector('.nav__toggle');
+        const overlay = document.querySelector('.nav__overlay');
+        const links = overlay.querySelectorAll('a');
+
+        function openMenu() {
+            document.body.classList.add('menu-open');
+            toggle.setAttribute('aria-expanded', 'true');
+            toggle.setAttribute('aria-label', 'Close navigation');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            document.body.classList.remove('menu-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Open navigation');
+            document.body.style.overflow = '';
+        }
+
+        toggle.addEventListener('click', () => {
+            document.body.classList.contains('menu-open') ? closeMenu() : openMenu();
+        });
+
+        links.forEach(link => link.addEventListener('click', closeMenu));
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && document.body.classList.contains('menu-open')) closeMenu();
+        });
+    </script>
+
+</body>
+
+</html>

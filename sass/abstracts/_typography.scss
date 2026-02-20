@@ -1,0 +1,44 @@
+/* ================================
+   FONT FAMILIES
+================================ */
+
+$font-heading: 'Pangolin', cursive;
+$font-body: 'Pompiere', sans-serif;
+
+/* ================================
+   FONT SIZES
+================================ */
+
+$font-size-base: 1rem;        // 16px
+$font-size-sm: 0.875rem;      // 14px
+$font-size-lg: 1.25rem;       // 20px
+$font-size-xl: 2rem;          // 32px
+$font-size-xxl: 2.75rem;      // 44px
+
+/* ================================
+   FONT WEIGHT
+================================ */
+
+$font-weight-regular: 400;
+
+/* ================================
+   TYPOGRAPHY STYLES
+================================ */
+
+body {
+  font-family: $font-body;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-base;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: $font-weight-regular;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: $font-size-xxl; }
+h2 { font-size: $font-size-xl; }
+h3 { font-size: $font-size-lg; }

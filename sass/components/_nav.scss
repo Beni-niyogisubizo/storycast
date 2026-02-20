@@ -1,0 +1,65 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/spacing' as *;
+@use '../abstracts/typography' as *;
+
+
+.site-header {
+  background-color: $color-nav-bg;
+  border-bottom: 2px solid $color-primary;
+}
+
+.nav {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: $space-sm $space-md;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Brand (Logo + Title) */
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+
+  text-decoration: none;
+  color: $color-text-primary;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+}
+
+.nav__title {
+  font-weight: 600;
+  font-size: $font-size-lg;
+}
+
+/* Navigation Links */
+.nav__menu {
+  list-style: none;
+  display: flex;
+  gap: $space-lg;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: $color-text-primary;
+  font-size: $font-size-base;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav__menu a:hover {
+  color: $color-accent;
+}
+
+/* Accessibility */
+.nav__menu a:focus-visible {
+  outline: 3px solid $color-focus;
+  outline-offset: 3px;
+}

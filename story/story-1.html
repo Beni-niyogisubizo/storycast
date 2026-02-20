@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryCast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/story.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+
+<body>
+
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main Navigation">
+
+            <a href="../index.html" class="nav__brand">
+                <span class="nav__logo" aria-hidden="true">🎧</span>
+                <span class="nav__title">StoryCast</span>
+            </a>
+
+            <ul class="nav__menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../story/story-1.html">Stories</a></li>
+            </ul>
+
+            <button class="nav__toggle" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="mobile-overlay">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <div class="nav__overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+        <ul class="nav__overlay-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./story/story-1.html">Stories</a></li>
+        </ul>
+        <p class="nav__overlay-footer">StoryCast &nbsp;·&nbsp; Your Audio Stories</p>
+    </div>
+
+
+
+    <section class="hero">
+        <video class="hero__video" autoplay muted loop playsinline>
+            <source src="../assets/video/15308631_3840_2160_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1>Every Voice Deserves <br> to Be Heard</h1>
+            <p>
+                StoryCast showcases audio and video storytelling from communities
+                around the world accessible to everyone, everywhere.
+            </p>
+            <a href="#" class="hero__btn" style="font-size: 16px;">Explore Stories</a>
+        </div>
+    </section>
+    <section>
+
+        <div class="page-wrapper">
+
+
+            <h1 class="story-title">Voices of the Valley</h1>
+
+            <div class="meta">
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg>
+                    Ama Diallo
+                </span>
+                <div class="meta-divider"></div>
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                    </svg>
+                    February 3, 2026
+                </span>
+                <div class="meta-divider"></div>
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 7v5l3 3" />
+                    </svg>
+                    18 min
+                </span>
+            </div>
+
+            <!-- Video Section -->
+            <div class="video-wrapper">
+                <div class="player-container">
+                    <!-- Use a free sample video for demonstration -->
+                    <video id="mainVideo" controls preload="metadata"
+                        poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=860&q=80">
+                        <!-- Free sample video sources for demonstration -->
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Audio Player -->
+                <div class="audio-section">
+                    <div class="audio-icon" id="audioBtn" onclick="toggleAudio()" title="Play ambient audio">
+                        <svg id="audioPlayIcon" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <polygon points="5,3 19,12 5,21" />
+                        </svg>
+                        <svg id="audioPauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="white"
+                            style="display:none">
+                            <rect x="6" y="4" width="4" height="16" />
+                            <rect x="14" y="4" width="4" height="16" />
+                        </svg>
+                    </div>
+
+                    <div class="audio-info">
+                        <div class="audio-title">🎵 Valley Ambience — Oral Tradition Soundscape</div>
+                        <div class="audio-bar-wrapper">
+                            <div class="audio-progress" id="audioProgress" onclick="seekAudio(event)">
+                                <div class="audio-progress-fill" id="audioFill"></div>
+                            </div>
+                            <span class="audio-time" id="audioTime">0:00 / 0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="waveform" id="waveform">
+                        <!-- Generated by JS -->
+                    </div>
+                </div>
+
+                <!-- Hidden audio element using a free sample -->
+                <audio id="bgAudio" preload="none">
+                    <source src="https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+                        type="audio/ogg">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- About Section -->
+            <div class="about-section">
+
+                <!-- <div class="section-div-01">
+
+                    <h2 class="section-title">The Last Broadcast</h2>
+                    <p class="about-text" style="color: #969696;">
+                        This video documentary captures the rich oral traditions of a rural valley community,
+                        where elders gather each season to pass down stories to the next generation.
+                    </p>
+                </div> -->
+
+                <div class="section-header center">
+                    <h1>The Last Broadcast</h1>
+                    <p>
+                        This video documentary captures the rich oral traditions of a rural valley community,
+                        where elders gather each season to pass down stories to the next generation.
+                    </p>
+
+                </div>
+                <button class="transcript-toggle" id="transcriptBtn" onclick="toggleTranscript()">
+                    Show Full Transcript
+                    <span class="arrow"></span>
+                </button>
+
+                <div class="transcript-body" id="transcriptBody">
+                    <div class="transcript-entry">
+                        <div class="transcript-time">0:00 – 1:30</div>
+                        <p>We begin as dawn breaks over the valley — mist still clinging to the ancient cedar trees. The
+                            elder, Amara, settles onto a hand-carved stool. The children gather at her feet, eyes wide
+                            with anticipation.</p>
+                    </div>
+                    <div class="transcript-entry">
+                        <div class="transcript-time">1:30 – 4:45</div>
+                        <p>"Long before the river bent the way it does today," she begins, her voice low and steady,
+                            "our people learned to listen to the land. Each tree remembers what we have forgotten."</p>
+                    </div>
+                    <div class="transcript-entry">
+                        <div class="transcript-time">4:45 – 9:00</div>
+                        <p>The young listeners ask questions. A girl named Sira wants to know about the Song of the
+                            First Rain — a melody passed down for twelve generations, never written, only sung.</p>
+                    </div>
+                    <div class="transcript-entry">
+                        <div class="transcript-time">9:00 – 14:20</div>
+                        <p>Amara closes her eyes. A soft hum rises from her chest. Other elders join in, voices weaving
+                            together like water over stone. The children begin to hum along — the tradition passes, once
+                            more, to new hands.</p>
+                    </div>
+                    <div class="transcript-entry">
+                        <div class="transcript-time">14:20 – 18:00</div>
+                        <p>As evening settles, the fire is lit. Amara looks into the camera, then past it. "We do not
+                            tell stories to entertain," she says. "We tell them so that no one is ever truly lost."</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <!-- ── Related Stories ──────────────────────────────────── -->
+        <aside class="related-stories" aria-labelledby="related-heading">
+            <div class="section-header center">
+                <h1>Related Stories</h1>
+                <p>Curated story collections grouped by theme or place made to help you dive deeper, <br /> follow a
+                    narrative, and discover voices that connect.</p>
+
+            </div>
+
+
+            <ul class="related__grid" role="list">
+
+                <!-- Card 1: The Last Broadcast -->
+                <li>
+                    <a href="#story-title" class="related__card" role="button"
+                        aria-label="Play related story: The Last Broadcast, 24 minutes by Margaret Chen" tabindex="0">
+                        <!-- Thumbnail -->
+                        <div class="related__thumb" aria-hidden="true">
+                            <div class="related__thumb-placeholder related__thumb-placeholder--warm"></div>
+                            <span class="related__badge">Audio</span>
+                            <!-- Headphones icon -->
+                            <span class="related__media-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                                    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z" />
+                                    <path d="M3  19a2 2 0 0 0  2 2h1a2 2 0 0 0  2-2v-3a2 2 0 0 0-2-2H3z" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="related__body">
+                            <h3 class="related__card-title">The Last Broadcast</h3>
+                            <p class="related__card-desc">
+                                A retired radio host reflects on the golden age of storytelling through the airwaves.
+                            </p>
+                            <footer class="related__card-meta">
+                                <span>Margaret Chen</span>
+                                <span class="dot">·</span>
+                                <time datetime="PT24M">24 min</time>
+                            </footer>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Card 2: The Sound Engineers -->
+                <li>
+                    <a href="#story-title" class="related__card related__card--dark" role="button"
+                        aria-label="Play related story: The Sound Engineers, 31 minutes by Jordan Reeves" tabindex="0">
+                        <!-- Thumbnail -->
+                        <div class="related__thumb" aria-hidden="true">
+                            <div class="related__thumb-placeholder related__thumb-placeholder--studio"></div>
+                            <span class="related__badge">Audio</span>
+                            <!-- Microphone icon -->
+                            <span class="related__media-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                    <line x1="12" y1="19" x2="12" y2="23" />
+                                    <line x1="8" y1="23" x2="16" y2="23" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="related__body">
+                            <h3 class="related__card-title">The Sound Engineers</h3>
+                            <p class="related__card-desc">
+                                Behind the scenes of the artists who craft immersive audio experiences.
+                            </p>
+                            <footer class="related__card-meta">
+                                <span>Jordan Reeves</span>
+                                <span class="dot">·</span>
+                                <time datetime="PT31M">31 min</time>
+                            </footer>
+                        </div>
+                    </a>
+                </li>
+                <!-- Card 2: The Sound Engineers -->
+                <li>
+                    <a href="#story-title" class="related__card related__card--dark" role="button"
+                        aria-label="Play related story: The Sound Engineers, 31 minutes by Jordan Reeves" tabindex="0">
+                        <!-- Thumbnail -->
+                        <div class="related__thumb" aria-hidden="true">
+                            <div class="related__thumb-placeholder related__thumb-placeholder--studio"></div>
+                            <span class="related__badge">Audio</span>
+                            <!-- Microphone icon -->
+                            <span class="related__media-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                    <line x1="12" y1="19" x2="12" y2="23" />
+                                    <line x1="8" y1="23" x2="16" y2="23" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="related__body">
+                            <h3 class="related__card-title">The Sound Engineers</h3>
+                            <p class="related__card-desc">
+                                Behind the scenes of the artists who craft immersive audio experiences.
+                            </p>
+                            <footer class="related__card-meta">
+                                <span>Jordan Reeves</span>
+                                <span class="dot">·</span>
+                                <time datetime="PT31M">31 min</time>
+                            </footer>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </aside>
+    </section>
+
+
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="footer-main">
+
+            <!-- Col 1: About -->
+            <div class="footer-col footer-about">
+                <h3>About Us</h3>
+                <p>StoryCast exists to amplify diverse voices through accessible audio and video storytelling. We
+                    believe every story matters and every person deserves the ability to experience it.</p>
+                <form class="footer-subscribe" action="#" method="post" aria-label="Newsletter subscription">
+                    <label for="footer-email" class="sr-only-label">Your Email Address</label>
+                    <input type="email" id="footer-email" name="email" placeholder="Your Email address"
+                        autocomplete="email" required aria-required="true" />
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+
+            <!-- Col 2: Contact -->
+            <address class="footer-col footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg></span>
+                        25 Street, 145 City Road New Town
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
+                            </svg></span>
+                        <a href="tel:+2507942127871">+250 7942 127 871</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg></span>
+                        <a href="mailto:storycast@company.com">storycast@company.com</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg></span>
+                        <a href="mailto:needhelp@storycast.com">needhelp@storycast.com</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg></span>
+                        <a href="#">Donate</a>
+                    </li>
+                </ul>
+            </address>
+
+            <!-- Col 3: Quick Links -->
+            <nav class="footer-col footer-links" aria-label="Quick navigation links">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg></span><a href="#">Home</a></li>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M20 21a8 8 0 1 0-16 0" />
+                            </svg></span><a href="#">About Us</a></li>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg></span><a href="#">Our Work</a></li>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="16" />
+                                <line x1="8" y1="12" x2="16" y2="12" />
+                            </svg></span><a href="#">Get Involved</a></li>
+                    <li><span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg></span><a href="#">Donate</a></li>
+                </ul>
+            </nav>
+
+            <!-- Col 4: Follow Us -->
+            <div class="footer-col footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></span>
+                        <a href="#" aria-label="LinkedIn">StoryCast</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4l16 16M4 20 20 4" />
+                            </svg></span>
+                        <a href="#" aria-label="X (Twitter)">StoryCast</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg></span>
+                        <a href="#" aria-label="Instagram">StoryCast</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></span>
+                        <a href="#" aria-label="Facebook">StoryCast</a>
+                    </li>
+                    <li>
+                        <span class="footer-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                                height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg></span>
+                        <a href="#" aria-label="Donate">Donate</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div><!-- /footer-main -->
+
+        <hr class="footer-divider" />
+
+        <div class="footer-bottom">
+            <nav class="footer-legal" aria-label="Legal links">
+                <a href="#">Career</a><span aria-hidden="true">|</span>
+                <a href="#">About us</a><span aria-hidden="true">|</span>
+                <a href="#">Contact us</a><span aria-hidden="true">|</span>
+                <a href="#">Privacy policy</a>
+            </nav>
+            <p class="footer-copy"><small>&copy; 2015 StoryCast. All rights reserved.</small></p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        // Waveform bars
+        const waveform = document.getElementById('waveform');
+        const heights = [8, 12, 18, 10, 22, 14, 8, 20, 16, 12, 18, 10, 14];
+        heights.forEach((h, i) => {
+            const bar = document.createElement('div');
+            bar.className = 'wave-bar';
+            bar.style.height = h + 'px';
+            bar.style.animationDelay = (i * 0.08) + 's';
+            waveform.appendChild(bar);
+        });
+
+        // Audio controls
+        const audio = document.getElementById('bgAudio');
+        const audioBtn = document.getElementById('audioBtn');
+        const playIcon = document.getElementById('audioPlayIcon');
+        const pauseIcon = document.getElementById('audioPauseIcon');
+        const fill = document.getElementById('audioFill');
+        const timeDisplay = document.getElementById('audioTime');
+        const waveBars = document.querySelectorAll('.wave-bar');
+
+        function formatTime(s) {
+            const m = Math.floor(s / 60);
+            const sec = Math.floor(s % 60);
+            return m + ':' + (sec < 10 ? '0' : '') + sec;
+        }
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play().then(() => {
+                    playIcon.style.display = 'none';
+                    pauseIcon.style.display = 'block';
+                    audioBtn.classList.add('playing');
+                    waveBars.forEach((b, i) => {
+                        b.classList.add('active');
+                        b.style.animationDelay = (i * 0.07) + 's';
+                        b.style.animationDuration = (0.5 + Math.random() * 0.5) + 's';
+                    });
+                }).catch(() => {
+                    // Autoplay blocked or no src — show user-friendly message
+                    playIcon.style.display = 'none';
+                    pauseIcon.style.display = 'block';
+                    audioBtn.classList.add('playing');
+                    waveBars.forEach(b => b.classList.add('active'));
+                    timeDisplay.textContent = 'Playing...';
+                });
+            } else {
+                audio.pause();
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+                audioBtn.classList.remove('playing');
+                waveBars.forEach(b => b.classList.remove('active'));
+            }
+        }
+
+        audio.addEventListener('timeupdate', () => {
+            if (audio.duration) {
+                const pct = (audio.currentTime / audio.duration) * 100;
+                fill.style.width = pct + '%';
+                timeDisplay.textContent = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration);
+            }
+        });
+
+        audio.addEventListener('loadedmetadata', () => {
+            timeDisplay.textContent = '0:00 / ' + formatTime(audio.duration);
+        });
+
+        audio.addEventListener('ended', () => {
+            playIcon.style.display = 'block';
+            pauseIcon.style.display = 'none';
+            audioBtn.classList.remove('playing');
+            waveBars.forEach(b => b.classList.remove('active'));
+            fill.style.width = '0%';
+        });
+
+        function seekAudio(e) {
+            const rect = document.getElementById('audioProgress').getBoundingClientRect();
+            const ratio = (e.clientX - rect.left) / rect.width;
+            if (audio.duration) {
+                audio.currentTime = ratio * audio.duration;
+            }
+        }
+
+        // Transcript toggle
+        function toggleTranscript() {
+            const btn = document.getElementById('transcriptBtn');
+            const body = document.getElementById('transcriptBody');
+            btn.classList.toggle('open');
+            body.classList.toggle('open');
+            btn.childNodes[0].textContent = body.classList.contains('open') ? 'Hide Full Transcript ' : 'Show Full Transcript ';
+        }
+
+        const toggle = document.querySelector('.nav__toggle');
+        const overlay = document.querySelector('.nav__overlay');
+        const links = overlay.querySelectorAll('a');
+
+        function openMenu() {
+            document.body.classList.add('menu-open');
+            toggle.setAttribute('aria-expanded', 'true');
+            toggle.setAttribute('aria-label', 'Close navigation');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            document.body.classList.remove('menu-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Open navigation');
+            document.body.style.overflow = '';
+        }
+
+        toggle.addEventListener('click', () => {
+            document.body.classList.contains('menu-open') ? closeMenu() : openMenu();
+        });
+
+        links.forEach(link => link.addEventListener('click', closeMenu));
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && document.body.classList.contains('menu-open')) closeMenu();
+        });
+    </script>
+</body>
+
+</html>
