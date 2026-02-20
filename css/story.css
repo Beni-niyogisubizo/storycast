@@ -27,7 +27,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Decorative top bar */
 .top-bar {
     width: 100%;
     height: 4px;
@@ -52,7 +51,6 @@ body {
     }
 }
 
-/* Badge */
 .badge {
     display: inline-block;
     background: var(--amber);
@@ -80,7 +78,6 @@ h1.story-title {
     animation: fadeUp 0.7s 0.1s ease both;
 }
 
-/* Meta info */
 .meta {
     display: flex;
     align-items: center;
@@ -110,7 +107,6 @@ h1.story-title {
     border-radius: 50%;
 }
 
-/* Video container */
 .video-wrapper {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -143,7 +139,6 @@ h1.story-title {
     letter-spacing: 0.02em;
 }
 
-/* Custom video player */
 .player-container {
     position: relative;
     background: #111;
@@ -160,7 +155,6 @@ video {
     background: #111;
 }
 
-/* Fallback overlay when no video src */
 .video-overlay {
     position: absolute;
     inset: 0;
@@ -218,7 +212,6 @@ video {
     letter-spacing: 0.04em;
 }
 
-/* Audio player */
 .audio-section {
     margin-top: 20px;
     background: linear-gradient(135deg, #2d1e0e 0%, #3a2510 100%);
@@ -303,7 +296,6 @@ video {
     white-space: nowrap;
 }
 
-/* Waveform bars */
 .waveform {
     display: flex;
     align-items: center;
@@ -334,7 +326,6 @@ video {
     }
 }
 
-/* About section */
 .about-section {
     animation: fadeUp 0.7s 0.3s ease both;
 }
@@ -438,7 +429,6 @@ h2.section-title {
     margin-bottom: 3px;
 }
 
-/* Decorative divider */
 .divider {
     width: 100%;
     height: 1px;
@@ -446,18 +436,9 @@ h2.section-title {
     margin: 44px 0;
 }
 
-/* Hidden actual audio element */
 audio {
     display: none;
 }
-
-
-
-
-
-/* ============================================================
-       Related Stories — scoped to .related-stories
-    ============================================================ */
 
 
 .related-stories {
@@ -479,7 +460,6 @@ audio {
     text-align: center;
 }
 
-/* ── Grid of cards ───────────────────────────────────────── */
 .related-stories .related__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -487,7 +467,6 @@ audio {
     list-style: none;
 }
 
-/* ── Card ────────────────────────────────────────────────── */
 .related-stories .related__card {
     background: #fff;
     border: 1.5px solid #e2ddd5;
@@ -512,7 +491,6 @@ audio {
     outline-offset: 2px;
 }
 
-/* ── Image side ──────────────────────────────────────────── */
 .related-stories .related__thumb {
     position: relative;
     flex: 0 0 42%;
@@ -533,7 +511,6 @@ audio {
     filter: brightness(0.95) saturate(1);
 }
 
-/* Placeholder gradient when no real image */
 .related-stories .related__thumb-placeholder {
     width: 100%;
     height: 100%;
@@ -561,7 +538,6 @@ audio {
     stroke-linejoin: round;
 }
 
-/* Badge over image */
 .related-stories .related__badge {
     position: absolute;
     top: 10px;
@@ -577,7 +553,6 @@ audio {
     z-index: 1;
 }
 
-/* Headphone / mic icon overlay */
 .related-stories .related__media-icon {
     position: absolute;
     bottom: 12px;
@@ -596,7 +571,6 @@ audio {
     stroke-linejoin: round;
 }
 
-/* ── Text side ───────────────────────────────────────────── */
 .related-stories .related__body {
     flex: 1;
     padding: 20px 18px;
@@ -619,7 +593,6 @@ audio {
     color: #e8a020;
 }
 
-/* Second card title stays dark */
 .related-stories .related__card--dark .related__card-title {
     color: #111;
 }
@@ -634,7 +607,6 @@ audio {
     line-height: 1.6;
 }
 
-/* Author · duration row */
 .related-stories .related__card-meta {
     display: flex;
     align-items: center;
@@ -650,7 +622,6 @@ audio {
     color: #ccc;
 }
 
-/* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 600px) {
     .related-stories .related__grid {
         grid-template-columns: 1fr;
@@ -661,7 +632,6 @@ audio {
     }
 }
 
-/* ── Scroll highlight pulse on main video ────────────────── */
 @keyframes rs-pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(232, 160, 32, 0.55);

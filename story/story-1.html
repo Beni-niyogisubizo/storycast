@@ -49,284 +49,250 @@
     </div>
 
 
-
-    <section class="hero">
-        <video class="hero__video" autoplay muted loop playsinline>
-            <source src="../assets/video/15308631_3840_2160_25fps.mp4" type="video/mp4">
-        </video>
-        <div class="hero__overlay"></div>
-        <div class="hero__content">
-            <h1>Every Voice Deserves <br> to Be Heard</h1>
-            <p>
-                StoryCast showcases audio and video storytelling from communities
-                around the world accessible to everyone, everywhere.
-            </p>
-            <a href="#" class="hero__btn" style="font-size: 16px;">Explore Stories</a>
-        </div>
-    </section>
-    <section>
-
-        <div class="page-wrapper">
-
-
-            <h1 class="story-title">Voices of the Valley</h1>
-
-            <div class="meta">
-                <span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <circle cx="12" cy="8" r="4" />
-                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-                    </svg>
-                    Ama Diallo
-                </span>
-                <div class="meta-divider"></div>
-                <span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="3" y="4" width="18" height="18" rx="2" />
-                        <path d="M16 2v4M8 2v4M3 10h18" />
-                    </svg>
-                    February 3, 2026
-                </span>
-                <div class="meta-divider"></div>
-                <span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M12 7v5l3 3" />
-                    </svg>
-                    18 min
-                </span>
+    <main>
+        <section class="hero">
+            <video class="hero__video" autoplay muted loop playsinline>
+                <source src="../assets/video/15308631_3840_2160_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1>Every Voice Deserves <br> to Be Heard</h1>
+                <p>
+                    StoryCast showcases audio and video storytelling from communities
+                    around the world accessible to everyone, everywhere.
+                </p>
+                <a href="#" class="hero__btn" style="font-size: 16px;">Explore Stories</a>
             </div>
-
-            <!-- Video Section -->
-            <div class="video-wrapper">
-                <div class="player-container">
-                    <!-- Use a free sample video for demonstration -->
-                    <video id="mainVideo" controls preload="metadata"
-                        poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=860&q=80">
-                        <!-- Free sample video sources for demonstration -->
-                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                            type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+        </section>    
+        <section>
+            <div class="page-wrapper">
+                <h1 class="story-title">Voices of the Valley</h1>
+                <div class="meta">
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                        </svg>
+                        Ama Diallo
+                    </span>
+                    <div class="meta-divider"></div>
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                        </svg>
+                        February 3, 2026
+                    </span>
+                    <div class="meta-divider"></div>
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 7v5l3 3" />
+                        </svg>
+                        18 min
+                    </span>
                 </div>
-
-                <!-- Audio Player -->
-                <div class="audio-section">
-                    <div class="audio-icon" id="audioBtn" onclick="toggleAudio()" title="Play ambient audio">
-                        <svg id="audioPlayIcon" width="20" height="20" viewBox="0 0 24 24" fill="white">
-                            <polygon points="5,3 19,12 5,21" />
-                        </svg>
-                        <svg id="audioPauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="white"
-                            style="display:none">
-                            <rect x="6" y="4" width="4" height="16" />
-                            <rect x="14" y="4" width="4" height="16" />
-                        </svg>
+    
+                <div class="video-wrapper">
+                    <div class="player-container">
+                        <video id="mainVideo" controls preload="metadata"
+                            poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=860&q=80">
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-
-                    <div class="audio-info">
-                        <div class="audio-title">🎵 Valley Ambience — Oral Tradition Soundscape</div>
-                        <div class="audio-bar-wrapper">
-                            <div class="audio-progress" id="audioProgress" onclick="seekAudio(event)">
-                                <div class="audio-progress-fill" id="audioFill"></div>
+    
+                    <div class="audio-section">
+                        <div class="audio-icon" id="audioBtn" onclick="toggleAudio()" title="Play ambient audio">
+                            <svg id="audioPlayIcon" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5,3 19,12 5,21" />
+                            </svg>
+                            <svg id="audioPauseIcon" width="20" height="20" viewBox="0 0 24 24" fill="white"
+                                style="display:none">
+                                <rect x="6" y="4" width="4" height="16" />
+                                <rect x="14" y="4" width="4" height="16" />
+                            </svg>
+                        </div>
+    
+                        <div class="audio-info">
+                            <div class="audio-title">🎵 Valley Ambience — Oral Tradition Soundscape</div>
+                            <div class="audio-bar-wrapper">
+                                <div class="audio-progress" id="audioProgress" onclick="seekAudio(event)">
+                                    <div class="audio-progress-fill" id="audioFill"></div>
+                                </div>
+                                <span class="audio-time" id="audioTime">0:00 / 0:00</span>
                             </div>
-                            <span class="audio-time" id="audioTime">0:00 / 0:00</span>
+                        </div>
+    
+                        <div class="waveform" id="waveform">
                         </div>
                     </div>
-
-                    <div class="waveform" id="waveform">
-                        <!-- Generated by JS -->
+    
+                    <audio id="bgAudio" preload="none">
+                        <source src="https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+                            type="audio/ogg">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+    
+                <div class="about-section">
+    
+                    <div class="section-header center">
+                        <h1>The Last Broadcast</h1>
+                        <p>
+                            This video documentary captures the rich oral traditions of a rural valley community,
+                            where elders gather each season to pass down stories to the next generation.
+                        </p>
+    
+                    </div>
+                    <button class="transcript-toggle" id="transcriptBtn" onclick="toggleTranscript()">
+                        Show Full Transcript
+                        <span class="arrow"></span>
+                    </button>
+    
+                    <div class="transcript-body" id="transcriptBody">
+                        <div class="transcript-entry">
+                            <div class="transcript-time">0:00 – 1:30</div>
+                            <p>We begin as dawn breaks over the valley — mist still clinging to the ancient cedar trees. The
+                                elder, Amara, settles onto a hand-carved stool. The children gather at her feet, eyes wide
+                                with anticipation.</p>
+                        </div>
+                        <div class="transcript-entry">
+                            <div class="transcript-time">1:30 – 4:45</div>
+                            <p>"Long before the river bent the way it does today," she begins, her voice low and steady,
+                                "our people learned to listen to the land. Each tree remembers what we have forgotten."</p>
+                        </div>
+                        <div class="transcript-entry">
+                            <div class="transcript-time">4:45 – 9:00</div>
+                            <p>The young listeners ask questions. A girl named Sira wants to know about the Song of the
+                                First Rain — a melody passed down for twelve generations, never written, only sung.</p>
+                        </div>
+                        <div class="transcript-entry">
+                            <div class="transcript-time">9:00 – 14:20</div>
+                            <p>Amara closes her eyes. A soft hum rises from her chest. Other elders join in, voices weaving
+                                together like water over stone. The children begin to hum along — the tradition passes, once
+                                more, to new hands.</p>
+                        </div>
+                        <div class="transcript-entry">
+                            <div class="transcript-time">14:20 – 18:00</div>
+                            <p>As evening settles, the fire is lit. Amara looks into the camera, then past it. "We do not
+                                tell stories to entertain," she says. "We tell them so that no one is ever truly lost."</p>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Hidden audio element using a free sample -->
-                <audio id="bgAudio" preload="none">
-                    <source src="https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
-                        type="audio/ogg">
-                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-                </audio>
+    
             </div>
-
-            <!-- About Section -->
-            <div class="about-section">
-
-                <!-- <div class="section-div-01">
-
-                    <h2 class="section-title">The Last Broadcast</h2>
-                    <p class="about-text" style="color: #969696;">
-                        This video documentary captures the rich oral traditions of a rural valley community,
-                        where elders gather each season to pass down stories to the next generation.
-                    </p>
-                </div> -->
-
+        </section>    
+        <section>
+            <aside class="related-stories" aria-labelledby="related-heading">
                 <div class="section-header center">
-                    <h1>The Last Broadcast</h1>
-                    <p>
-                        This video documentary captures the rich oral traditions of a rural valley community,
-                        where elders gather each season to pass down stories to the next generation.
-                    </p>
-
+                    <h1>Related Stories</h1>
+                    <p>Curated story collections grouped by theme or place made to help you dive deeper, <br /> follow a
+                        narrative, and discover voices that connect.</p>
+    
                 </div>
-                <button class="transcript-toggle" id="transcriptBtn" onclick="toggleTranscript()">
-                    Show Full Transcript
-                    <span class="arrow"></span>
-                </button>
-
-                <div class="transcript-body" id="transcriptBody">
-                    <div class="transcript-entry">
-                        <div class="transcript-time">0:00 – 1:30</div>
-                        <p>We begin as dawn breaks over the valley — mist still clinging to the ancient cedar trees. The
-                            elder, Amara, settles onto a hand-carved stool. The children gather at her feet, eyes wide
-                            with anticipation.</p>
-                    </div>
-                    <div class="transcript-entry">
-                        <div class="transcript-time">1:30 – 4:45</div>
-                        <p>"Long before the river bent the way it does today," she begins, her voice low and steady,
-                            "our people learned to listen to the land. Each tree remembers what we have forgotten."</p>
-                    </div>
-                    <div class="transcript-entry">
-                        <div class="transcript-time">4:45 – 9:00</div>
-                        <p>The young listeners ask questions. A girl named Sira wants to know about the Song of the
-                            First Rain — a melody passed down for twelve generations, never written, only sung.</p>
-                    </div>
-                    <div class="transcript-entry">
-                        <div class="transcript-time">9:00 – 14:20</div>
-                        <p>Amara closes her eyes. A soft hum rises from her chest. Other elders join in, voices weaving
-                            together like water over stone. The children begin to hum along — the tradition passes, once
-                            more, to new hands.</p>
-                    </div>
-                    <div class="transcript-entry">
-                        <div class="transcript-time">14:20 – 18:00</div>
-                        <p>As evening settles, the fire is lit. Amara looks into the camera, then past it. "We do not
-                            tell stories to entertain," she says. "We tell them so that no one is ever truly lost."</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-        <!-- ── Related Stories ──────────────────────────────────── -->
-        <aside class="related-stories" aria-labelledby="related-heading">
-            <div class="section-header center">
-                <h1>Related Stories</h1>
-                <p>Curated story collections grouped by theme or place made to help you dive deeper, <br /> follow a
-                    narrative, and discover voices that connect.</p>
-
-            </div>
-
-
-            <ul class="related__grid" role="list">
-
-                <!-- Card 1: The Last Broadcast -->
-                <li>
-                    <a href="#story-title" class="related__card" role="button"
-                        aria-label="Play related story: The Last Broadcast, 24 minutes by Margaret Chen" tabindex="0">
-                        <!-- Thumbnail -->
-                        <div class="related__thumb" aria-hidden="true">
-                            <div class="related__thumb-placeholder related__thumb-placeholder--warm"></div>
-                            <span class="related__badge">Audio</span>
-                            <!-- Headphones icon -->
-                            <span class="related__media-icon">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
-                                    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z" />
-                                    <path d="M3  19a2 2 0 0 0  2 2h1a2 2 0 0 0  2-2v-3a2 2 0 0 0-2-2H3z" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <!-- Body -->
-                        <div class="related__body">
-                            <h3 class="related__card-title">The Last Broadcast</h3>
-                            <p class="related__card-desc">
-                                A retired radio host reflects on the golden age of storytelling through the airwaves.
-                            </p>
-                            <footer class="related__card-meta">
-                                <span>Margaret Chen</span>
-                                <span class="dot">·</span>
-                                <time datetime="PT24M">24 min</time>
-                            </footer>
-                        </div>
-                    </a>
-                </li>
-
-                <!-- Card 2: The Sound Engineers -->
-                <li>
-                    <a href="#story-title" class="related__card related__card--dark" role="button"
-                        aria-label="Play related story: The Sound Engineers, 31 minutes by Jordan Reeves" tabindex="0">
-                        <!-- Thumbnail -->
-                        <div class="related__thumb" aria-hidden="true">
-                            <div class="related__thumb-placeholder related__thumb-placeholder--studio"></div>
-                            <span class="related__badge">Audio</span>
-                            <!-- Microphone icon -->
-                            <span class="related__media-icon">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
-                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                                    <line x1="12" y1="19" x2="12" y2="23" />
-                                    <line x1="8" y1="23" x2="16" y2="23" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <!-- Body -->
-                        <div class="related__body">
-                            <h3 class="related__card-title">The Sound Engineers</h3>
-                            <p class="related__card-desc">
-                                Behind the scenes of the artists who craft immersive audio experiences.
-                            </p>
-                            <footer class="related__card-meta">
-                                <span>Jordan Reeves</span>
-                                <span class="dot">·</span>
-                                <time datetime="PT31M">31 min</time>
-                            </footer>
-                        </div>
-                    </a>
-                </li>
-                <!-- Card 2: The Sound Engineers -->
-                <li>
-                    <a href="#story-title" class="related__card related__card--dark" role="button"
-                        aria-label="Play related story: The Sound Engineers, 31 minutes by Jordan Reeves" tabindex="0">
-                        <!-- Thumbnail -->
-                        <div class="related__thumb" aria-hidden="true">
-                            <div class="related__thumb-placeholder related__thumb-placeholder--studio"></div>
-                            <span class="related__badge">Audio</span>
-                            <!-- Microphone icon -->
-                            <span class="related__media-icon">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
-                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
-                                    <line x1="12" y1="19" x2="12" y2="23" />
-                                    <line x1="8" y1="23" x2="16" y2="23" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <!-- Body -->
-                        <div class="related__body">
-                            <h3 class="related__card-title">The Sound Engineers</h3>
-                            <p class="related__card-desc">
-                                Behind the scenes of the artists who craft immersive audio experiences.
-                            </p>
-                            <footer class="related__card-meta">
-                                <span>Jordan Reeves</span>
-                                <span class="dot">·</span>
-                                <time datetime="PT31M">31 min</time>
-                            </footer>
-                        </div>
-                    </a>
-                </li>
-
-            </ul>
-        </aside>
-    </section>
+    
+    
+                <ul class="related__grid" role="list">
+    
+                    <li>
+                        <a href="#story-title" class="related__card" role="button"
+                            aria-label="Play related story: The Last Broadcast, 24 minutes by Margaret Chen" tabindex="0">
+                            <div class="related__thumb" aria-hidden="true">
+                                <div class="related__thumb-placeholder related__thumb-placeholder--warm"></div>
+                                <span class="related__badge">Audio</span>
+                                <span class="related__media-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z" />
+                                        <path d="M3  19a2 2 0 0 0  2 2h1a2 2 0 0 0  2-2v-3a2 2 0 0 0-2-2H3z" />
+                                    </svg>
+                                </span>
+                            </div>
+    
+                            <div class="related__body">
+                                <h3 class="related__card-title">The Last Broadcast</h3>
+                                <p class="related__card-desc">
+                                    A retired radio host reflects on the golden age of storytelling through the airwaves.
+                                </p>
+                                <footer class="related__card-meta">
+                                    <span>Margaret Chen</span>
+                                    <span class="dot">·</span>
+                                    <time datetime="PT24M">24 min</time>
+                                </footer>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#story-title" class="related__card related__card--dark" role="button"
+                            aria-label="Play related story: The Sound Engineers, 31 minutes by Jordan Reeves" tabindex="0">
+                            <div class="related__thumb" aria-hidden="true">
+                                <div class="related__thumb-placeholder related__thumb-placeholder--studio"></div>
+                                <span class="related__badge">Audio</span>
+                                <span class="related__media-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                        <line x1="12" y1="19" x2="12" y2="23" />
+                                        <line x1="8" y1="23" x2="16" y2="23" />
+                                    </svg>
+                                </span>
+                            </div>
+    
+                            <div class="related__body">
+                                <h3 class="related__card-title">The Sound Engineers</h3>
+                                <p class="related__card-desc">
+                                    Behind the scenes of the artists who craft immersive audio experiences.
+                                </p>
+                                <footer class="related__card-meta">
+                                    <span>Jordan Reeves</span>
+                                    <span class="dot">·</span>
+                                    <time datetime="PT31M">31 min</time>
+                                </footer>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#story-title" class="related__card related__card--dark" role="button"
+                            aria-label="Play related story: The Sound Engineers, 31 minutes by Jordan Reeves" tabindex="0">
+                            <div class="related__thumb" aria-hidden="true">
+                                <div class="related__thumb-placeholder related__thumb-placeholder--studio"></div>
+                                <span class="related__badge">Audio</span>
+                                <span class="related__media-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                        <line x1="12" y1="19" x2="12" y2="23" />
+                                        <line x1="8" y1="23" x2="16" y2="23" />
+                                    </svg>
+                                </span>
+                            </div>
+    
+                            <div class="related__body">
+                                <h3 class="related__card-title">The Sound Engineers</h3>
+                                <p class="related__card-desc">
+                                    Behind the scenes of the artists who craft immersive audio experiences.
+                                </p>
+                                <footer class="related__card-meta">
+                                    <span>Jordan Reeves</span>
+                                    <span class="dot">·</span>
+                                    <time datetime="PT31M">31 min</time>
+                                </footer>
+                            </div>
+                        </a>
+                    </li>
+    
+                </ul>
+            </aside>
+        </section>
+    </main>
 
 
     <footer class="site-footer" aria-label="Site footer">
         <div class="footer-main">
 
-            <!-- Col 1: About -->
             <div class="footer-col footer-about">
                 <h3>About Us</h3>
                 <p>StoryCast exists to amplify diverse voices through accessible audio and video storytelling. We
@@ -339,7 +305,6 @@
                 </form>
             </div>
 
-            <!-- Col 2: Contact -->
             <address class="footer-col footer-contact">
                 <h3>Contact Us</h3>
                 <ul>
@@ -392,7 +357,6 @@
                 </ul>
             </address>
 
-            <!-- Col 3: Quick Links -->
             <nav class="footer-col footer-links" aria-label="Quick navigation links">
                 <h3>Quick Link</h3>
                 <ul>
@@ -431,7 +395,6 @@
                 </ul>
             </nav>
 
-            <!-- Col 4: Follow Us -->
             <div class="footer-col footer-social">
                 <h3>Follow Us</h3>
                 <ul>
@@ -485,7 +448,7 @@
                 </ul>
             </div>
 
-        </div><!-- /footer-main -->
+        </div>
 
         <hr class="footer-divider" />
 
@@ -501,11 +464,7 @@
     </footer>
 
 
-
-
-
     <script>
-        // Waveform bars
         const waveform = document.getElementById('waveform');
         const heights = [8, 12, 18, 10, 22, 14, 8, 20, 16, 12, 18, 10, 14];
         heights.forEach((h, i) => {
@@ -516,7 +475,6 @@
             waveform.appendChild(bar);
         });
 
-        // Audio controls
         const audio = document.getElementById('bgAudio');
         const audioBtn = document.getElementById('audioBtn');
         const playIcon = document.getElementById('audioPlayIcon');
@@ -543,7 +501,6 @@
                         b.style.animationDuration = (0.5 + Math.random() * 0.5) + 's';
                     });
                 }).catch(() => {
-                    // Autoplay blocked or no src — show user-friendly message
                     playIcon.style.display = 'none';
                     pauseIcon.style.display = 'block';
                     audioBtn.classList.add('playing');
@@ -587,7 +544,6 @@
             }
         }
 
-        // Transcript toggle
         function toggleTranscript() {
             const btn = document.getElementById('transcriptBtn');
             const body = document.getElementById('transcriptBody');
@@ -624,6 +580,7 @@
             if (e.key === 'Escape' && document.body.classList.contains('menu-open')) closeMenu();
         });
     </script>
-</body>
 
+
+</body>
 </html>

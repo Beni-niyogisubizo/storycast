@@ -13,28 +13,24 @@
 </head>
 
 <body>
-   
+
     <header class="site-header">
         <nav class="nav" aria-label="Main Navigation">
-
             <a href="/index.html" class="nav__brand">
                 <span class="nav__logo" aria-hidden="true">🎧</span>
                 <span class="nav__title">StoryCast</span>
             </a>
-
             <ul class="nav__menu">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./story/story-1.html">Stories</a></li>
             </ul>
-
             <button class="nav__toggle" aria-label="Open navigation" aria-expanded="false"
                 aria-controls="mobile-overlay">
                 <span class="nav__toggle-bar"></span>
                 <span class="nav__toggle-bar"></span>
                 <span class="nav__toggle-bar"></span>
             </button>
-
         </nav>
     </header>
 
@@ -47,388 +43,348 @@
         <p class="nav__overlay-footer">StoryCast &nbsp;·&nbsp; Your Audio Stories</p>
     </div>
 
-
-
-    <section class="hero">
-        <video class="hero__video" autoplay muted loop playsinline>
-            <source src="./assets/video/15308631_3840_2160_25fps.mp4" type="video/mp4">
-        </video>
-        <div class="hero__overlay"></div>
-        <div class="hero__content">
-            <h1>Know More About our <br> Vision and Expertise </h1>
-            <p>
-                StoryCast showcases audio and video storytelling from communities
-                around the world accessible to everyone, everywhere.
-            </p>
-            <a href="#" class="hero__btn" style="font-size: 16px;">Explore Stories</a>
-        </div>
-
-    </section>
-
-    <section class="about">
-        <div class="about__grid">
-            <!-- background-color: #edecec; -->
-
-            <!-- LEFT: TEXT -->
-            <div class="about__left">
-                <h2 class="about__heading fade-up">
-                    Who we are
-                </h2>
-                <div class="about__divider fade-up"></div>
-
-                <p class="about__text fade-up">
-
-                    The mission is <strong>create an environment suitable for youth
-                        to actively participate</strong> in the national development agenda and <strong>innovate and
-                        scale up solutions to
-                        socio-economic challenges</strong> in their communities.  
+    <main>
+        <section class="hero">
+            <video class="hero__video" autoplay muted loop playsinline>
+                <source src="./assets/video/15308631_3840_2160_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1>Know More About our <br> Vision and Expertise </h1>
+                <p>
+                    StoryCast showcases audio and video storytelling from communities
+                    around the world accessible to everyone, everywhere.
                 </p>
-                <p class="about__text fade-up">
-
-                    StoryCast exists <strong>amplify diverse voices through accessible audio and video</strong>
-                    storytelling.
-                    We believe every story matters and every person deserves the <strong>ability to experience
-                        it.</strong>
-
-                </p>
-
-
-                <a href="#contact" class="about__btn fade-up">
-                    <span>Let's Work Together</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </a>
+                <a href="#" class="hero__btn" style="font-size: 16px;">Explore Stories</a>
             </div>
 
-            <!-- RIGHT: IMAGE -->
-            <div class="about__right">
-                <div class="about__img-wrapper">
-                    <img src="./assets/images/hero-stoytelling.jpg" alt="ABOUT US IMAGE" class="about__img"
-                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-                    <div class="img-placeholder" style="display:none;"></div>
+        </section>
+
+        <section class="about">
+            <div class="about__grid">
+                <div class="about__left">
+                    <h2 class="about__heading fade-up">
+                        Who we are
+                    </h2>
+                    <div class="about__divider fade-up"></div>
+                    <p class="about__text fade-up">
+                        The mission is <strong>create an environment suitable for youth
+                            to actively participate</strong> in the national development agenda and <strong>innovate and
+                            scale up solutions to
+                            socio-economic challenges</strong> in their communities.
+                    </p>
+                    <p class="about__text fade-up">
+                        StoryCast exists <strong>amplify diverse voices through accessible audio and video</strong>
+                        storytelling.
+                        We believe every story matters and every person deserves the <strong>ability to experience
+                            it.</strong>
+                    </p>
+                    <a href="#contact" class="about__btn fade-up">
+                        <span>Let's Work Together</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="about__right">
+                    <div class="about__img-wrapper">
+                        <img src="./assets/images/hero-stoytelling.jpg" alt="ABOUT US IMAGE" class="about__img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <div class="img-placeholder" style="display:none;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="vvm" aria-label="Company Vision, Mission and Values">
+            <article class="card" role="region" aria-labelledby="vision-heading">
+                <header>
+                    <h2 id="vision-heading">Our Vision</h2>
+                </header>
+                <p>
+                    The mission is create an environment suitable for youth to actively participate in the national
+                    development agenda and innovate and scale up solutions to socio-economic challenges in their
+                    communities. 
+                </p>
+            </article>
+            <article class="card" role="region" aria-labelledby="mission-heading">
+                <header>
+                    <h2 id="mission-heading">Our Mission</h2>
+                </header>
+                <p>
+                    StoryCast exists amplify diverse voices through accessible audio and video storytelling. We believe
+                    every story matters and every person deserves the ability to experience it.
+                </p>
+            </article>
+            <aside class="values-panel" aria-labelledby="values-heading">
+                <header>
+                    <h2 id="values-heading">Our Values</h2>
+                </header>
+
+                <ol class="values-list">
+
+                    <li class="value-item">
+                        <details class="value-details">
+                            <summary class="value-summary">
+                                <span class="value-label">1. Teamwork</span>
+                                <span class="value-icon">+</span>
+                            </summary>
+                            <div class="value-body">
+                                <p>We believe that collaboration drives better outcomes. Our teams work together across
+                                    disciplines to deliver integrated, effective solutions.</p>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="value-item">
+                        <details class="value-details">
+                            <summary class="value-summary">
+                                <span class="value-label">2. Customer Focus</span>
+                                <span class="value-icon">+</span>
+                            </summary>
+                            <div class="value-body">
+                                <p>Our clients are at the heart of everything we do. We listen, adapt, and deliver
+                                    solutions
+                                    tailored to each client's unique needs.</p>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="value-item">
+                        <details class="value-details">
+                            <summary class="value-summary">
+                                <span class="value-label">3. Accountability and Transparency</span>
+                                <span class="value-icon">+</span>
+                            </summary>
+                            <div class="value-body">
+                                <p>We take ownership of our actions and communicate openly with all stakeholders,
+                                    building
+                                    trust through consistent integrity.</p>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="value-item">
+                        <details class="value-details">
+                            <summary class="value-summary">
+                                <span class="value-label">4. Quality and Excellence</span>
+                                <span class="value-icon">+</span>
+                            </summary>
+                            <div class="value-body">
+                                <p>We are committed to delivering high-quality outputs and continuously raising the bar
+                                    for
+                                    professional excellence in every project.</p>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="value-item">
+                        <details class="value-details">
+                            <summary class="value-summary">
+                                <span class="value-label">5. Stakeholder Engagement</span>
+                                <span class="value-icon">+</span>
+                            </summary>
+                            <div class="value-body">
+                                <p>We actively engage with all relevant stakeholders — communities, partners, and
+                                    clients —
+                                    to ensure our work creates meaningful impact.</p>
+                            </div>
+                        </details>
+                    </li>
+
+                    <li class="value-item">
+                        <details class="value-details">
+                            <summary class="value-summary">
+                                <span class="value-label">6. Innovation and Creativity</span>
+                                <span class="value-icon">+</span>
+                            </summary>
+                            <div class="value-body">
+                                <p>We embrace emerging technologies and creative thinking to solve complex challenges
+                                    and
+                                    shape a better future for our communities.</p>
+                            </div>
+                        </details>
+                    </li>
+                </ol>
+            </aside>
+        </section>
+
+        <section class="accessibility-section" aria-labelledby="acc-heading">
+            <header class="acc_heading">
+                <h2 class="acc__heading" id="acc-heading">Accessibility Commitment</h2>
+                <p class="acc__intro">
+                    Accessibility isn't an afterthought at StoryCast it's foundational. Here's how we ensure
+                    our content and platform are usable by everyone.
+                </p>
+            </header>
+
+            <ul class="acc__grid" role="list">
+                <li class="acc__card" role="listitem">
+                    <figure class="acc__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <line x1="10" y1="9" x2="8" y2="9" />
+                        </svg>
+                    </figure>
+                    <h3 class="acc__card-title">Transcripts for All Audio</h3>
+                    <p class="acc__card-text">
+                        Every audio story includes a full, time-stamped transcript so deaf and hard-of-hearing
+                        audiences can engage with the content.
+                    </p>
+                </li>
+
+                <li class="acc__card" role="listitem">
+                    <figure class="acc__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
+                            <line x1="7" y1="15" x2="7" y2="15" />
+                            <line x1="17" y1="15" x2="17" y2="15" />
+                            <line x1="12" y1="15" x2="12" y2="15" />
+                            <polyline points="8 11 12 7 16 11" />
+                            <line x1="12" y1="7" x2="12" y2="13" />
+                        </svg>
+                    </figure>
+                    <h3 class="acc__card-title">Captions for All Video</h3>
+                    <p class="acc__card-text">
+                        All video content includes synchronized captions. We're working toward descriptive audio
+                        tracks for blind and low-vision users.
+                    </p>
+                </li>
+
+                <li class="acc__card" role="listitem">
+                    <figure class="acc__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <line x1="6" y1="11" x2="6" y2="11" />
+                            <line x1="10" y1="11" x2="10" y2="11" />
+                            <line x1="14" y1="11" x2="14" y2="11" />
+                            <line x1="18" y1="11" x2="18" y2="11" />
+                            <line x1="6" y1="15" x2="6" y2="15" />
+                            <line x1="18" y1="15" x2="18" y2="15" />
+                            <line x1="10" y1="15" x2="14" y2="15" />
+                        </svg>
+                    </figure>
+                    <h3 class="acc__card-title">Keyboard Navigation</h3>
+                    <p class="acc__card-text">
+                        The entire site is fully navigable via keyboard. All interactive elements have visible
+                        focus indicators that meet WCAG 2.1 AA contrast requirements.
+                    </p>
+                </li>
+
+                <li class="acc__card acc__card--lone" role="listitem">
+                    <figure class="acc__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8  6  2 12  8 18" />
+                        </svg>
+                    </figure>
+                    <h3 class="acc__card-title">Semantic &amp; Structured</h3>
+                    <p class="acc__card-text">
+                        We use semantic HTML5 and ARIA attributes so screen readers and assistive technologies
+                        can accurately convey the structure and meaning of our content.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact-section" aria-labelledby="contact-heading" style="background-color: white;">
+            <div class="section-header">
+                <h1>Contact Us</h1>
+                <p>Questions or feedback? Send us a message and we’ll get back to you soon. </p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 id="contact-heading">Get In Touch</h2>
+                    <p class="contact-intro">We are always ready to help you and answer your questions. Reach out
+                        anytime we'd love to hear from you.
+                    </p>
+                    <address>
+                        <article class="contact-item" aria-label="Head Office location">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                    <line x1="12" y1="12" x2="12" y2="12.01" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Head Office</h3>
+                                <p>RWANDA, Kigali, Kicukiro</p>
+                            </div>
+                        </article>
+
+                        <article class="contact-item" aria-label="Physical location address">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>24J3+R22, KK 15 Rd, Kigali</p>
+                            </div>
+                        </article>
+                    </address>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <h2>Leave Us a Message</h2>
+                    <form class="contact-form" action="#" method="post" novalidate aria-label="Contact form">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name" class="sr-only-label">First Name</label>
+                                <input type="text" id="first-name" name="first_name" placeholder="FIRST NAME"
+                                    autocomplete="given-name" required aria-required="true" />
+                            </div>
+                            <div class="form-group">
+                                <label for="second-name" class="sr-only-label">Second Name</label>
+                                <input type="text" id="second-name" name="second_name" placeholder="SECOND NAME"
+                                    autocomplete="family-name" required aria-required="true" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-email" class="sr-only-label">Email</label>
+                                <input type="email" id="contact-email" name="email" placeholder="EMAIL"
+                                    autocomplete="email" required aria-required="true" />
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="sr-only-label">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="SUBJECT" required
+                                    aria-required="true" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="sr-only-label">Message</label>
+                            <textarea id="message" name="message" placeholder="MESSAGE" rows="5" required
+                                aria-required="true"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
                 </div>
             </div>
-
-        </div>
-    </section>
-
-
-
-
-    <section class="vvm" aria-label="Company Vision, Mission and Values">
-
-        <!-- Vision Card -->
-        <article class="card" role="region" aria-labelledby="vision-heading">
-            <header>
-                <h2 id="vision-heading">Our Vision</h2>
-            </header>
-            <p>
-                The mission is create an environment suitable for youth to actively participate in the national
-                development agenda and innovate and scale up solutions to socio-economic challenges in their
-                communities. 
-            </p>
-        </article>
-
-        <!-- Mission Card -->
-        <article class="card" role="region" aria-labelledby="mission-heading">
-            <header>
-                <h2 id="mission-heading">Our Mission</h2>
-            </header>
-            <p>
-                StoryCast exists amplify diverse voices through accessible audio and video storytelling. We believe
-                every story matters and every person deserves the ability to experience it.
-            </p>
-        </article>
-
-        <!-- Values Panel -->
-        <aside class="values-panel" aria-labelledby="values-heading">
-            <header>
-                <h2 id="values-heading">Our Values</h2>
-            </header>
-
-            <ol class="values-list">
-
-                <li class="value-item">
-                    <details class="value-details">
-                        <summary class="value-summary">
-                            <span class="value-label">1. Teamwork</span>
-                            <span class="value-icon">+</span>
-                        </summary>
-                        <div class="value-body">
-                            <p>We believe that collaboration drives better outcomes. Our teams work together across
-                                disciplines to deliver integrated, effective solutions.</p>
-                        </div>
-                    </details>
-                </li>
-
-                <li class="value-item">
-                    <details class="value-details">
-                        <summary class="value-summary">
-                            <span class="value-label">2. Customer Focus</span>
-                            <span class="value-icon">+</span>
-                        </summary>
-                        <div class="value-body">
-                            <p>Our clients are at the heart of everything we do. We listen, adapt, and deliver solutions
-                                tailored to each client's unique needs.</p>
-                        </div>
-                    </details>
-                </li>
-
-                <li class="value-item">
-                    <details class="value-details">
-                        <summary class="value-summary">
-                            <span class="value-label">3. Accountability and Transparency</span>
-                            <span class="value-icon">+</span>
-                        </summary>
-                        <div class="value-body">
-                            <p>We take ownership of our actions and communicate openly with all stakeholders, building
-                                trust through consistent integrity.</p>
-                        </div>
-                    </details>
-                </li>
-
-                <li class="value-item">
-                    <details class="value-details">
-                        <summary class="value-summary">
-                            <span class="value-label">4. Quality and Excellence</span>
-                            <span class="value-icon">+</span>
-                        </summary>
-                        <div class="value-body">
-                            <p>We are committed to delivering high-quality outputs and continuously raising the bar for
-                                professional excellence in every project.</p>
-                        </div>
-                    </details>
-                </li>
-
-                <li class="value-item">
-                    <details class="value-details">
-                        <summary class="value-summary">
-                            <span class="value-label">5. Stakeholder Engagement</span>
-                            <span class="value-icon">+</span>
-                        </summary>
-                        <div class="value-body">
-                            <p>We actively engage with all relevant stakeholders — communities, partners, and clients —
-                                to ensure our work creates meaningful impact.</p>
-                        </div>
-                    </details>
-                </li>
-
-                <li class="value-item">
-                    <details class="value-details">
-                        <summary class="value-summary">
-                            <span class="value-label">6. Innovation and Creativity</span>
-                            <span class="value-icon">+</span>
-                        </summary>
-                        <div class="value-body">
-                            <p>We embrace emerging technologies and creative thinking to solve complex challenges and
-                                shape a better future for our communities.</p>
-                        </div>
-                    </details>
-                </li>
-
-            </ol>
-        </aside>
-
-    </section>
-
-
-
-
-    <section class="accessibility-section" aria-labelledby="acc-heading">
-
-        <!-- Section header -->
-        <header class="acc_heading">
-            <h2 class="acc__heading" id="acc-heading">Accessibility Commitment</h2>
-            <p class="acc__intro">
-                Accessibility isn't an afterthought at StoryCast it's foundational. Here's how we ensure
-                our content and platform are usable by everyone.
-            </p>
-        </header>
-
-        <!-- Cards grid -->
-        <ul class="acc__grid" role="list">
-
-            <!-- Card 1 -->
-            <li class="acc__card" role="listitem">
-                <figure class="acc__icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <!-- Document / transcript icon -->
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                        <polyline points="14 2 14 8 20 8" />
-                        <line x1="16" y1="13" x2="8" y2="13" />
-                        <line x1="16" y1="17" x2="8" y2="17" />
-                        <line x1="10" y1="9" x2="8" y2="9" />
-                    </svg>
-                </figure>
-                <h3 class="acc__card-title">Transcripts for All Audio</h3>
-                <p class="acc__card-text">
-                    Every audio story includes a full, time-stamped transcript so deaf and hard-of-hearing
-                    audiences can engage with the content.
-                </p>
-            </li>
-
-            <!-- Card 2 -->
-            <li class="acc__card" role="listitem">
-                <figure class="acc__icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <!-- Video / captions icon -->
-                        <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
-                        <line x1="7" y1="15" x2="7" y2="15" />
-                        <line x1="17" y1="15" x2="17" y2="15" />
-                        <line x1="12" y1="15" x2="12" y2="15" />
-                        <polyline points="8 11 12 7 16 11" />
-                        <line x1="12" y1="7" x2="12" y2="13" />
-                    </svg>
-                </figure>
-                <h3 class="acc__card-title">Captions for All Video</h3>
-                <p class="acc__card-text">
-                    All video content includes synchronized captions. We're working toward descriptive audio
-                    tracks for blind and low-vision users.
-                </p>
-            </li>
-
-            <!-- Card 3 -->
-            <li class="acc__card" role="listitem">
-                <figure class="acc__icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <!-- Keyboard icon -->
-                        <rect x="2" y="7" width="20" height="14" rx="2" />
-                        <line x1="6" y1="11" x2="6" y2="11" />
-                        <line x1="10" y1="11" x2="10" y2="11" />
-                        <line x1="14" y1="11" x2="14" y2="11" />
-                        <line x1="18" y1="11" x2="18" y2="11" />
-                        <line x1="6" y1="15" x2="6" y2="15" />
-                        <line x1="18" y1="15" x2="18" y2="15" />
-                        <line x1="10" y1="15" x2="14" y2="15" />
-                    </svg>
-                </figure>
-                <h3 class="acc__card-title">Keyboard Navigation</h3>
-                <p class="acc__card-text">
-                    The entire site is fully navigable via keyboard. All interactive elements have visible
-                    focus indicators that meet WCAG 2.1 AA contrast requirements.
-                </p>
-            </li>
-
-            <!-- Card 4 — lone card on second row -->
-            <li class="acc__card acc__card--lone" role="listitem">
-                <figure class="acc__icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <!-- Code / semantic icon -->
-                        <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8  6  2 12  8 18" />
-                    </svg>
-                </figure>
-                <h3 class="acc__card-title">Semantic &amp; Structured</h3>
-                <p class="acc__card-text">
-                    We use semantic HTML5 and ARIA attributes so screen readers and assistive technologies
-                    can accurately convey the structure and meaning of our content.
-                </p>
-            </li>
-
-        </ul>
-
-    </section>
-
-
-
-
-    <section class="contact-section" aria-labelledby="contact-heading" style="background-color: white;">
-        <div class="section-header">
-            <h1>Contact Us</h1>
-            <p>Questions or feedback? Send us a message and we’ll get back to you soon. </p>
-        </div>
-        <div class="contact-wrapper">
-
-            <!-- Left: Info -->
-            <div class="contact-info">
-                <h2 id="contact-heading">Get In Touch</h2>
-                <p class="contact-intro">We are always ready to help you and answer your questions. Reach out
-                    anytime we'd love to hear from you.</p>
-
-                <address>
-                    <article class="contact-item" aria-label="Head Office location">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="2" y="7" width="20" height="14" rx="2" />
-                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                                <line x1="12" y1="12" x2="12" y2="12.01" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3>Head Office</h3>
-                            <p>RWANDA, Kigali, Kicukiro</p>
-                        </div>
-                    </article>
-
-                    <article class="contact-item" aria-label="Physical location address">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3>Location</h3>
-                            <p>24J3+R22, KK 15 Rd, Kigali</p>
-                        </div>
-                    </article>
-                </address>
-            </div>
-
-            <!-- Right: Form -->
-            <div class="contact-form-wrap">
-                <h2>Leave Us a Message</h2>
-                <form class="contact-form" action="#" method="post" novalidate aria-label="Contact form">
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="first-name" class="sr-only-label">First Name</label>
-                            <input type="text" id="first-name" name="first_name" placeholder="FIRST NAME"
-                                autocomplete="given-name" required aria-required="true" />
-                        </div>
-                        <div class="form-group">
-                            <label for="second-name" class="sr-only-label">Second Name</label>
-                            <input type="text" id="second-name" name="second_name" placeholder="SECOND NAME"
-                                autocomplete="family-name" required aria-required="true" />
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contact-email" class="sr-only-label">Email</label>
-                            <input type="email" id="contact-email" name="email" placeholder="EMAIL" autocomplete="email"
-                                required aria-required="true" />
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="sr-only-label">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="SUBJECT" required
-                                aria-required="true" />
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message" class="sr-only-label">Message</label>
-                        <textarea id="message" name="message" placeholder="MESSAGE" rows="5" required
-                            aria-required="true"></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">SUBMIT</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
     <footer class="site-footer" aria-label="Site footer">
         <div class="footer-main">
 
-            <!-- Col 1: About -->
             <div class="footer-col footer-about">
                 <h3>About Us</h3>
                 <p>StoryCast exists to amplify diverse voices through accessible audio and video storytelling. We
@@ -441,7 +397,6 @@
                 </form>
             </div>
 
-            <!-- Col 2: Contact -->
             <address class="footer-col footer-contact">
                 <h3>Contact Us</h3>
                 <ul>
@@ -494,7 +449,6 @@
                 </ul>
             </address>
 
-            <!-- Col 3: Quick Links -->
             <nav class="footer-col footer-links" aria-label="Quick navigation links">
                 <h3>Quick Link</h3>
                 <ul>
@@ -533,7 +487,6 @@
                 </ul>
             </nav>
 
-            <!-- Col 4: Follow Us -->
             <div class="footer-col footer-social">
                 <h3>Follow Us</h3>
                 <ul>
@@ -586,11 +539,8 @@
                     </li>
                 </ul>
             </div>
-
-        </div><!-- /footer-main -->
-
+        </div>
         <hr class="footer-divider" />
-
         <div class="footer-bottom">
             <nav class="footer-legal" aria-label="Legal links">
                 <a href="#">Career</a><span aria-hidden="true">|</span>
@@ -601,9 +551,6 @@
             <p class="footer-copy"><small>&copy; 2015 StoryCast. All rights reserved.</small></p>
         </div>
     </footer>
-
-
-
 
 
     <script>

@@ -19,7 +19,6 @@
     }
 
     .nav {
-      max-width: 1200px;
       margin-inline: auto;
       padding: 1rem 2rem;
       display: flex;
@@ -40,12 +39,11 @@
     .nav__logo {
       font-size: 1.6rem;
       line-height: 1;
+      color: #e8a020;
     }
 
     .nav__title {
-      font-family: 'Bebas Neue', sans-serif;
       font-size: 1.6rem;
-      letter-spacing: 0.08em;
       color: var(--ink);
       transition: color var(--speed);
     }
@@ -63,7 +61,7 @@
       text-decoration: none;
       color: var(--ink);
       font-size: 0.85rem;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       position: relative;
@@ -211,8 +209,8 @@
         padding: 0.85rem 1.25rem;
       }
 
-      .nav__menu   { display: none; }   /* hide desktop links */
-      .nav__toggle { display: flex; }   /* show hamburger     */
+      .nav__menu   { display: none; }   
+      .nav__toggle { display: flex; }   
     }
 
     .demo-content {

@@ -62,7 +62,6 @@
   color: #F4A261;
 }
 
-/* Accessibility */
 .nav__menu a:focus-visible {
   outline: 3px solid #e59850;
   outline-offset: 3px;
@@ -89,7 +88,6 @@
   justify-content: flex-start;
   min-height: 90vh;
   padding: 0 2rem;
-  /* background-image: url('../assets/images/hero-storytelling.jpg'); */
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -317,14 +315,12 @@
 }
 
 
-/* ── Grid ────────────────────────────────────────── */
 .series-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* ── Card ────────────────────────────────────────── */
 .series-card {
   background: #fff;
   border-radius: 10px;
@@ -342,7 +338,6 @@
   transform: translateY(-3px);
 }
 
-/* ── Media side ──────────────────────────────────── */
 .card-media {
   position: relative;
   flex: 0 0 38%;
@@ -371,7 +366,6 @@
   filter: brightness(0.9) saturate(1) sepia(0.1);
 }
 
-/* badge */
 .media-badge {
   position: absolute;
   top: 10px;
@@ -387,7 +381,6 @@
   z-index: 1;
 }
 
-/* ── Text side ───────────────────────────────────── */
 .card-body {
   flex: 1;
   padding: 8px 12px;
@@ -413,7 +406,6 @@
   font-weight: 300;
 }
 
-/* ── Audio player (hidden visually but accessible) ── */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -423,7 +415,6 @@
   white-space: nowrap;
 }
 
-/* ── Responsive ──────────────────────────────────── */
 @media (max-width: 768px) {
   .series-grid {
     grid-template-columns: 1fr;
@@ -440,7 +431,6 @@
 
 
 
-/* ── Contact Section ─────────────────────────────── */
 .contact-section {
   padding: 2rem 2rem;
 }
@@ -452,7 +442,6 @@
   align-items: start;
 }
 
-/* ── Left ────────────────────────────────────────── */
 .contact-info h2 {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   font-size: 1.75rem;
@@ -514,7 +503,6 @@ address {
   color: #777;
 }
 
-/* ── Right: Form Card ────────────────────────────── */
 .contact-form-wrap {
   background: #eef0f4;
   border-radius: 16px;
@@ -613,7 +601,6 @@ address {
   outline-offset: 3px;
 }
 
-/* ── Responsive ──────────────────────────────────── */
 @media (max-width: 768px) {
   .contact-wrapper {
     grid-template-columns: 1fr;
@@ -635,20 +622,6 @@ address {
     height: 4px;
     background: linear-gradient(90deg, var(--amber), var(--amber-light), var(--amber));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -844,11 +817,6 @@ address {
 }
 
 
-
-/* ── About Us Page ───────────────────────────────────── */
-
-
-
 *,
 *::before,
 *::after {
@@ -875,7 +843,6 @@ body {
   color: var(--text);
 }
 
-/* ── ABOUT SECTION ── */
 .about {
   max-width: 1200px;
   margin: 0 auto;
@@ -889,7 +856,6 @@ body {
   align-items: center;
 }
 
-/* LEFT COLUMN */
 .about__left {
   position: relative;
 }
@@ -905,9 +871,7 @@ body {
 }
 
 .about__heading {
-  /* font-family: 'Playfair Display', serif; */
   font-family: 'Comic Sans MS', cursive, sans-serif;
-
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 500;
   color: var(--navy);
@@ -940,7 +904,6 @@ body {
   font-weight: 600;
 }
 
-/* STATS ROW */
 .about__stats {
   display: flex;
   gap: 2.5rem;
@@ -976,7 +939,6 @@ body {
   color: var(--text-light);
 }
 
-/* CTA BUTTON */
 .about__btn {
   display: inline-flex;
   align-items: center;
@@ -1022,7 +984,6 @@ body {
   z-index: 1;
 }
 
-/* RIGHT COLUMN — IMAGE */
 .about__right {
   position: relative;
 }
@@ -1031,7 +992,6 @@ body {
   position: relative;
 }
 
-/* Gold decorative block behind image */
 .about__img-wrapper::before {
   content: '';
   position: absolute;
@@ -1045,7 +1005,6 @@ body {
   z-index: 0;
 }
 
-/* Thin gold border accent top-left */
 .about__img-wrapper::after {
   content: '';
   position: absolute;
@@ -1066,11 +1025,9 @@ body {
   object-fit: cover;
   border-radius: 2px;
   display: block;
-  /* Placeholder gradient until real image is added */
   background: linear-gradient(135deg, #4a7c59 0%, #2d5a3d 40%, #1a3d28 100%);
 }
 
-/* Floating badge */
 .about__badge {
   position: absolute;
   bottom: 40px;
@@ -1113,7 +1070,6 @@ body {
   margin-top: 0.3rem;
 }
 
-/* PLACEHOLDER IMAGE CONTENT (shown when no real image) */
 .img-placeholder {
   position: relative;
   z-index: 1;
@@ -1133,7 +1089,6 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* ── FADE IN ANIMATION ── */
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
@@ -1171,7 +1126,6 @@ body {
   }
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .about__grid {
     grid-template-columns: 1fr;
@@ -1205,13 +1159,6 @@ body {
 
 
 
-
-/* ============================================================
-   vvm.css  —  Vision, Mission & Values section styles.
-   All rules are scoped to .vvm so they won't affect main.css.
-   ============================================================ */
-
-/* ── Layout ─────────────────────────────────────────────── */
 .vvm {
   display: grid;
   grid-template-columns: 1fr 1fr 1.1fr;
@@ -1222,7 +1169,6 @@ body {
   background-color: white;
 }
 
-/* ── Vision & Mission Cards ──────────────────────────── */
 .vvm .card {
   border-radius: 12px;
   padding: 44px 36px;
@@ -1235,7 +1181,6 @@ body {
   border-style: solid;
 }
 
-/* Animated gold top bar on hover */
 .vvm .card::before {
   content: '';
   position: absolute;
@@ -1274,7 +1219,6 @@ body {
   text-align: center;
 }
 
-/* ── Values Panel ────────────────────────────────────────── */
 .vvm .values-panel {
   display: flex;
   flex-direction: column;
@@ -1289,7 +1233,6 @@ body {
   color: #1a1a1a;
 }
 
-/* ── Accordion list ──────────────────────────────────────── */
 .vvm .values-list {
   list-style: none;
   border: 2px solid #d4b800;
@@ -1307,7 +1250,6 @@ body {
   border-bottom: none;
 }
 
-/* ── Details / Summary (native accordion) ────────────────── */
 .vvm .value-details {
   width: 100%;
 }
@@ -1327,7 +1269,6 @@ body {
   user-select: none;
 }
 
-/* Remove default arrow in all browsers */
 .vvm .value-summary::-webkit-details-marker {
   display: none;
 }
@@ -1360,7 +1301,6 @@ body {
   transform: rotate(45deg);
 }
 
-/* ── Expanded body ───────────────────────────────────────── */
 .vvm .value-body {
   padding: 0 22px 18px;
   font-size: 0.88rem;
@@ -1374,7 +1314,6 @@ body {
   margin: 0;
 }
 
-/* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 900px) {
   .vvm {
     grid-template-columns: 1fr 1fr;
@@ -1431,14 +1370,12 @@ body {
   margin-bottom: 36px;
 }
 
-/* ── Card grid ───────────────────────────────────────────── */
 .accessibility-section .acc__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* ── Individual card ─────────────────────────────────────── */
 .accessibility-section .acc__card {
   background: #ffffff;
   border: 1.5px solid #d8d8d8;
@@ -1450,7 +1387,6 @@ body {
   overflow: hidden;
 }
 
-/* Subtle gold shimmer line on hover */
 .accessibility-section .acc__card::after {
   content: '';
   position: absolute;
@@ -1475,7 +1411,6 @@ body {
   transform: scaleX(1);
 }
 
-/* Icon wrapper */
 .accessibility-section .acc__icon {
   width: 52px;
   height: 52px;
@@ -1512,12 +1447,10 @@ body {
   line-height: 1.65;
 }
 
-/* ── 4th card sits alone on second row, left-aligned ─────── */
 .accessibility-section .acc__card--lone {
   grid-column: 1 / 2;
 }
 
-/* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 860px) {
   .accessibility-section .acc__grid {
     grid-template-columns: 1fr 1fr;
@@ -1536,23 +1469,11 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   .story-article {
       max-width: 720px;
       margin-inline: auto;
     }
 
-    /* ── Badge ───────────────────────────────────────────────── */
     .story-article .story__badge {
       display: inline-block;
       background: #e8a020;
@@ -1572,7 +1493,6 @@ body {
       background: #c9880e;
     }
 
-    /* ── Title ───────────────────────────────────────────────── */
     .story-article .story__title {
       font-family: 'Comic Sans MS', cursive, sans-serif;
       font-size: clamp(2rem, 5vw, 2.6rem);
@@ -1582,7 +1502,6 @@ body {
       margin-bottom: 16px;
     }
 
-    /* ── Meta bar ────────────────────────────────────────────── */
     .story-article .story__meta {
       display: flex;
       align-items: center;
@@ -1622,7 +1541,6 @@ body {
       color: #e8a020;
     }
 
-    /* ── Video player card ───────────────────────────────────── */
     .story-article .story__media {
       background: #fff;
       border: 1.5px solid #e2ddd5;
@@ -1648,7 +1566,6 @@ body {
       aspect-ratio: 16 / 9;
     }
 
-    /* ── About section ───────────────────────────────────────── */
     .story-article .story__about {
       margin-bottom: 24px;
     }
@@ -1667,7 +1584,6 @@ body {
       line-height: 1.8;
     }
 
-    /* ── Transcript toggle ───────────────────────────────────── */
     .story-article .story__transcript-toggle {
       display: inline-flex;
       align-items: center;
@@ -1709,7 +1625,6 @@ body {
       transform: rotate(180deg);
     }
 
-    /* ── Transcript panel ────────────────────────────────────── */
     .story-article .story__transcript {
       background: #fff;
       border: 1.5px solid #e2ddd5;
@@ -1728,7 +1643,6 @@ body {
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* Transcript list */
     .story-article .story__transcript ol {
       list-style: none;
       padding: 0;
@@ -1751,7 +1665,6 @@ body {
       padding-bottom: 0;
     }
 
-    /* Timestamp */
     .story-article .story__transcript time {
       font-weight: 700;
       color: #888;
@@ -1760,7 +1673,6 @@ body {
       margin-right: 2px;
     }
 
-    /* Speaker name */
     .story-article .story__transcript cite {
       font-style: normal;
       font-weight: 600;
@@ -1768,7 +1680,6 @@ body {
       margin-right: 4px;
     }
 
-    /* Spoken words */
     .story-article .story__transcript blockquote {
       display: inline;
       font-style: normal;
@@ -1779,7 +1690,6 @@ body {
       margin: 0;
     }
 
-    /* ── Tags ────────────────────────────────────────────────── */
     .story-article .story__tags {
       display: flex;
       flex-wrap: wrap;
@@ -1808,7 +1718,6 @@ body {
       color: #fff;
     }
 
-    /* ── Responsive ──────────────────────────────────────────── */
     @media (max-width: 520px) {
       .story-article .story__transcript {
         padding: 18px 16px;
